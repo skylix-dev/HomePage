@@ -32,6 +32,12 @@
         justify-content: flex-start;
         gap: 20px;
 
+        @media (prefers-color-scheme: light) {
+            background: #f1f1f1;
+            color: #000;
+            border-color: #bebebe;
+        }
+
         & > *:nth-child(1) {
             font-size: 20px;
         }
@@ -39,6 +45,11 @@
         &:hover {
             background: #303030;
             border-color: #444;
+
+            @media (prefers-color-scheme: light) {
+                background: #eaeaea;
+                border-color: #999;
+            }
 
             &:active {
                 transform: scale(0.95);
@@ -66,9 +77,19 @@
             outline: none;
             transition: 100ms;
 
+            @media (prefers-color-scheme: light) {
+                background: #f1f1f1;
+                border-color: #bebebe;
+            }
+
             &:hover {
                 border-color: #333;
                 background: #272727;
+
+                @media (prefers-color-scheme: light) {
+                    background: #eaeaea;
+                    border-color: #999;
+                }
             }
 
             &:focus {
@@ -84,10 +105,22 @@
             transition: 150ms;
             background: #333;
             border-radius: 4px;
+
+            @media (prefers-color-scheme: light) {
+                background: #f1f1f1;
+                color: #000;
+                border-color: #999;
+            }
             
             &:hover {
                 background: #373737;
                 border-color: #444;
+
+                @media (prefers-color-scheme: light) {
+                    color: #000;
+                    background: #eaeaea;
+                    border-color: #999;
+                }
 
                 &:active {
                     transform: scale(0.95);
@@ -98,19 +131,23 @@
 }
 
 .divider {
-    width: 3px;
-    height: 50px;
+    width: 4px;
+    height: 70px;
     background: #333;
     border-radius: 4px;
     display: flex;
     margin: 0 20px;
+
+    @media (prefers-color-scheme: light) {
+        background: #bebebe;
+    }
 }
 
 @media (max-width: 800px) {      
     .divider {
         transform: rotate(0);
         width: 50px;
-        height: 3px;
+        height: 4px;
     }
 
     .form {
