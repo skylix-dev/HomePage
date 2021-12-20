@@ -26,3 +26,39 @@ a {
 	background: #14FF94;
 	color: #555;
 }
+
+.root {
+	width: 100vw;
+	height: 100vh;
+}
+
+.body {
+	width: 100vw;
+	height: calc(100vh - 60px);
+	overflow: auto;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border: 3px solid #121212;
+		background: #777;
+		border-radius: 8px;
+
+		&:hover {
+			background: #fff;
+		}
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #121212;
+		border-radius: 4px 0 0 4px;
+		margin: 10px 0;
+	}
+}
+
+.main {
+	min-height: calc(100vh - 60px);
+}
