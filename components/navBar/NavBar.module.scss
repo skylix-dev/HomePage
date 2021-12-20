@@ -1,6 +1,6 @@
 .root {
     width: 100vw;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,11 +77,17 @@
         transition: 150ms;
 
         &:hover {
-            color: #fff;
+            color: #888;
 
             &:active {
                 color: #14FF94;
             }
         }
+    }
+}
+
+.linksLinkWrapperActive {
+    & > *:nth-child(1) {
+        color: #fff;
     }
 }

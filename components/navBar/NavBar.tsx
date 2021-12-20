@@ -1,8 +1,11 @@
 import style from "./NavBar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function NavBar() {
+	const router = useRouter();
+
 	const links = [
 		{
 			to: "/",
@@ -35,7 +38,7 @@ export default function NavBar() {
 				<div className={style.links}>
 					{ links.map((link, index) => {
 						return (
-							<div className={style.linksLinkWrapper} key={"link-" + index + "-" + link.label}>
+							<div className={style.linksLinkWrapper + (router.pathname.split("/")[1] == link.to.split("/")[1] ? " " + style.linksLinkWrapperActive : "")} key={"link-" + index + "-" + link.label}>
 								<Link href={link.to}>{link.label}</Link>
 
 								{links[index + 1] && <span className={style.linksSeparator}></span>}
