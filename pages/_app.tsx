@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
 		<div className="root">
 			<Head>
 				<title>ILLUX</title>
+				<link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/IlluxDev/Illux/main/LogoDynamic.svg" />
 			</Head>
 			<NavBar />
 
