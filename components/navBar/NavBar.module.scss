@@ -25,6 +25,16 @@
     letter-spacing: 4px;
     font-size: 14px;
     user-select: none;
+    cursor: pointer;
+    transition: 150ms;
+
+    &:hover {
+        opacity: 0.8;
+
+        &:active {
+            transform: scale(1.1);
+        }
+    }
 }
 
 .buttons {
@@ -52,6 +62,12 @@
             }
         }
     }
+}
+
+.buttonsActive {
+    pointer-events: none;
+    border-color: #272727 !important;
+    background: #272727 !important;
 }
 
 .links {
@@ -89,7 +105,9 @@
 }
 
 .linksLinkWrapperActive {
+    pointer-events: none;
+    
     & > *:nth-child(1) {
-        color: #fff;
+        color: #fff !important;
     }
 }

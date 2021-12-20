@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
 			<Head>
 				<title>ILLUX</title>
 				<link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/IlluxDev/Illux/main/LogoDynamic.svg" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>
 			<NavBar />
 

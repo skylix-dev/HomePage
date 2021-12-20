@@ -1,0 +1,118 @@
+.root {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {      
+    .root {
+        flex-direction: column;
+    }
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 30px);
+    max-width: 400px;
+    gap: 10px;
+
+    button {
+        background: #272727;
+        transition: 150ms;
+        padding: 20px 20px;
+        border-radius: 4px;
+        border: 1px solid #272727;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+
+        &:hover {
+            background: #303030;
+            border-color: #444;
+
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+    }
+}
+
+.form {
+    width: calc(50% - 30px);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            background: #222;
+            outline: none;
+
+            &:hover {
+                border-color: #333;
+                background: #272727;
+            }
+
+            &:focus {
+                border-color: #444;
+                border-bottom-color: #fff;
+                background: transparent;
+            }
+        }
+
+        button {
+            padding: 10px;
+            border: 1px solid #333;
+            transition: 150ms;
+            background: #333;
+            border-radius: 4px;
+            
+            &:hover {
+                background: #373737;
+                border-color: #444;
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+}
+
+.divider {
+    width: 3px;
+    height: 50px;
+    background: #333;
+    border-radius: 4px;
+    display: flex;
+    margin: 0 20px;
+}
+
+@media (max-width: 800px) {      
+    .divider {
+        transform: rotate(0);
+        width: 50px;
+        height: 3px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .socials {
+        width: 100%;
+    }
+}

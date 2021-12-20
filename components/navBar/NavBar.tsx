@@ -24,7 +24,7 @@ export default function NavBar() {
 	return (
 		<div className={style.root}>
 			<div className={style.inner}>
-				<div className={style.logo}>
+				<div onClick={() => router.replace("/")} className={style.logo}>
 					<Image
 						draggable={false}
 						src="https://raw.githubusercontent.com/IlluxDev/Illux/main/Logo.svg"
@@ -48,7 +48,7 @@ export default function NavBar() {
 				</div>
 
 				<div className={style.buttons}>
-					<button>Sign In</button>
+					<button className={router.pathname.split("/")[1] == "login" ? style.buttonsActive : ""} onClick={() => router.replace("/login")}>Sign In</button>
 				</div>
 			</div>
 		</div>
