@@ -1,9 +1,15 @@
+@font-face {
+	font-family: "SegoeUI-VF";
+	src: url("../fonts/SegoeUI-VF.ttf");
+}
+
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: "SegoeUI-VF";
+	font-size: 13px;
+	background: #181818;
 }
 
 a {
@@ -13,4 +19,10 @@ a {
 
 * {
 	box-sizing: border-box;
+	color-scheme: dark;
+}
+
+::selection {
+	background: #14FF94;
+	color: #555;
 }
