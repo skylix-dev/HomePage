@@ -1,3 +1,62 @@
 .root {
+    width: 100%;
+    max-width: 1500px;
+}
 
+.banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+
+    h1 {
+        font-size: 50px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    span {
+        font-size: 15px;
+        color: #999;
+        margin: 20px;
+        text-align: center;
+    }
+}
+
+.bannerButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+
+    button {
+        border: 1px solid #252525;
+        background: #252225;
+        color: #fff;
+        border-radius: 4px;
+        padding: 10px 12px;
+        min-width: 100px;
+        transition: 150ms;
+
+        &:hover {
+            background: #282828;
+            border-color: #333;
+
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+
+.bannerButtonsPrimary {
+    background: #14FF94 !important;
+    color: #222 !important;
+    border: none;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
