@@ -28,6 +28,10 @@
     cursor: pointer;
     transition: 150ms;
 
+    @media (prefers-color-scheme: light) {
+        color: #007636;
+    }
+
     &:hover {
         opacity: 0.8;
 
@@ -52,9 +56,18 @@
         transition: 150ms;
         font-family: "SegoeUI-VF";
 
+        @media (prefers-color-scheme: light) {
+            border-color: #bebebe;
+            color: #000;
+        }
+
         &:hover {
             border-color: #444;
             background: rgba(255, 255, 255, 0.02);
+
+            @media (prefers-color-scheme: light) {
+                background: rgba(0, 0, 0, 0.05);
+            }
 
             &:active {
                 border-color: #555;
@@ -68,6 +81,11 @@
     pointer-events: none;
     border-color: #272727 !important;
     background: #272727 !important;
+
+    @media (prefers-color-scheme: light) {
+        border-color: #f1f1f1 !important;
+        background: #f1f1f1 !important;
+    }
 }
 
 .links {
@@ -94,11 +112,23 @@
         color: #666;
         transition: 150ms;
 
+        @media (prefers-color-scheme: light) {
+            color: rgb(177, 177, 177);
+        }
+
         &:hover {
             color: #888;
 
+            @media (prefers-color-scheme: light) {
+                color: #666;
+            }
+
             &:active {
                 color: #14FF94;
+
+                @media (prefers-color-scheme: light) {
+                    color: #007636;
+                }
             }
         }
     }
@@ -109,5 +139,9 @@
     
     & > *:nth-child(1) {
         color: #fff !important;
+
+        @media (prefers-color-scheme: light) {
+            color: #000 !important;
+        }
     }
 }

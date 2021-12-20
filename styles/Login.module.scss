@@ -32,6 +32,10 @@
         justify-content: flex-start;
         gap: 20px;
 
+        & > *:nth-child(1) {
+            font-size: 20px;
+        }
+
         &:hover {
             background: #303030;
             border-color: #444;

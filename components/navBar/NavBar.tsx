@@ -27,7 +27,7 @@ export default function NavBar() {
 				<div onClick={() => router.replace("/")} className={style.logo}>
 					<Image
 						draggable={false}
-						src="https://raw.githubusercontent.com/IlluxDev/Illux/main/Logo.svg"
+						src="https://raw.githubusercontent.com/IlluxDev/Illux/main/LogoDynamic.svg"
 						alt="ILLUX's Logo"
 						width={25}
 						height={25}

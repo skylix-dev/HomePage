@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/footer/Footer";
 import NavBar from "../components/navBar/NavBar";
 import "../styles/Globals.scss";
 
@@ -17,7 +18,7 @@ function MyApp({ Component, pageProps }) {
 					<Component {...pageProps} />
 				</div>
 
-				<footer>ILLUX - CopyRight 2021 - 2021</footer>
+				<Footer />
 			</div>
 		</div>
 	);

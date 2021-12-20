@@ -12,6 +12,12 @@ body {
 	background: #181818;
 }
 
+@media (prefers-color-scheme: light) {
+	body {
+		background: #fff;
+	}
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -23,8 +29,8 @@ a {
 }
 
 ::selection {
-	background: #14FF94;
-	color: #555;
+	background: #007636;
+	color: #fff;
 }
 
 .root {
@@ -50,12 +56,25 @@ a {
 		&:hover {
 			background: #fff;
 		}
+
+		@media (prefers-color-scheme: light) {
+			background: #444;
+			border-color: #e1e1e1;
+
+			&:hover {
+				background: #000;
+			}
+		}
 	}
 
 	&::-webkit-scrollbar-track {
 		background: #090909;
 		border-radius: 4px 0 0 4px;
 		margin: 10px 0;
+
+		@media (prefers-color-scheme: light) {
+			background: #e1e1e1;
+		}
 	}
 }
 
