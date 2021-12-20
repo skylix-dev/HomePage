@@ -38,12 +38,12 @@ a {
 	overflow: auto;
 
 	&::-webkit-scrollbar {
-		width: 10px;
-		height: 10px;
+		width: 14px;
+		height: 14px;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		border: 3px solid #121212;
+		border: 4px solid #090909;
 		background: #777;
 		border-radius: 8px;
 
@@ -53,7 +53,7 @@ a {
 	}
 
 	&::-webkit-scrollbar-track {
-		background: #121212;
+		background: #090909;
 		border-radius: 4px 0 0 4px;
 		margin: 10px 0;
 	}
