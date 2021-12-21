@@ -19,7 +19,7 @@
         flex-direction: column;
 
         h1 {
-            max-width: 500px;
+            max-width: 400px;
             font-size: 25px;
             margin: 0 0 20px 0;
             font-weight: 600;
@@ -28,6 +28,7 @@
         span {
             margin: 5px 0;
             color: #999;
+            max-width: 400px;
         }
     }
 }
